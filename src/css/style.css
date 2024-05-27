@@ -1,0 +1,431 @@
+/* Global Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: 400;
+}
+
+h1,
+h3 {
+    color: white;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Appbar Styles */
+.appbar {
+    max-width: 100%;
+    position: relative;
+    overflow: visible;
+    padding-bottom: 2em;
+}
+
+.bgt-appbar {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 0 0 3em 3em;
+}
+
+.search-container {
+    position: absolute;
+    bottom: 10px;
+    right: 7%;
+    width: 85%;
+}
+
+.search-input {
+    width: 100%;
+    padding: .8em 3em .8em 2.5em;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 1em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+}
+
+.search-icon {
+    left: 10px;
+}
+
+.sliders-icon {
+    right: 10px;
+}
+
+.inf {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3em;
+    box-sizing: border-box;
+}
+
+.inf-text h1 {
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Project Section Styles */
+
+main {
+    padding-bottom: 4em;
+}
+
+.project {
+    padding: 2em;
+    border-radius: 1em;
+
+}
+
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.project-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.project-title h4 {
+    font-size: 15px;
+    color: #666;
+}
+
+.project-container {
+    display: flex;
+    overflow-x: auto;
+    width: calc(100% + 4em);
+    margin-left: -2em;
+    margin-right: -2em;
+    padding: 2em 0;
+}
+
+.project-container::-webkit-scrollbar {
+    display: none;
+}
+
+.project-container {
+    scrollbar-width: none;
+}
+
+.project-card {
+    margin: 0 1em;
+    flex: 0 0 auto;
+    cursor: pointer;
+
+}
+
+.project-card {
+    background-color: #33333346;
+    border-radius: 3em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: rgb(0, 0, 0);
+
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background-color: black;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+}
+
+.card-img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.card-img img {
+    width: 60%;
+    height: 60%;
+}
+
+.project-card h2 {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+
+.project-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.left-content {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.icon-arrow {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* tastk */
+/* --------------------------- */
+
+
+.tasks {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 15px;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.tasks-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+
+.icon-circle-small {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* checkbox */
+.tasks-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.tasks {
+    cursor: pointer;
+
+}
+
+.tasks-checkbox input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    
+}
+
+.tasks-checkbox label {
+    position: relative;
+    padding-left: 2.2em;
+    display: inline-block;
+}
+
+.tasks-checkbox label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: .5em;
+    background: #FFF;
+    margin-right: 0.5em;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.tasks-checkbox label::after {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 0.75em;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.tasks-checkbox label:focus::before,
+.tasks-checkbox label:hover::before {
+    background: #DDD;
+}
+
+.tasks-checkbox input:checked+label::before {
+    background: #000000;
+    border-color: #000000;
+}
+
+.tasks-checkbox input:checked+label::after {
+    opacity: 1;
+}
+
+/* fim-checkbox */
+
+
+
+
+
+
+
+
+
+/* menu */
+/* ----------------------------------- */
+
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.menu-item {
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.divis {
+    margin: 0 40px;
+}
+
+
+.menu-circula {
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 2px solid rgba(179, 0, 255, 0.867);
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.928);
+    border-radius: 50%;
+}
+
+.menu-circula img {
+    width: 30px;
+    height: auto;
+}
+
+.menu-item img {
+    width: 30px;
+    height: auto;
+}
+
+.menu-item svg {
+    width: 30px;
+    height: auto;
+}
+
+.menu-item.selected img {
+    fill: black;
+}
+
+
+/* calendio */
+.calendar {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .calendar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .day {
+    font-size: 20px;
+    padding: .1em;
+    display: inline-block;
+    width: 30px;
+    height: 70px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2em;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .day:hover {
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+  }
+
+  .weekday {
+    font-size: 12px;
+  }

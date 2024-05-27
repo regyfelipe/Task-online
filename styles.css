@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+  }
+  
+  .card {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-right: 10px; /* Margem entre os cards */
+  }
+  
+  .hr-container {
+    display: flex;
+    align-items: center; /* Alinha o hr verticalmente */
+  }
+  
+  .vertical-line {
+    height: 100%;
+    width: 1px; /* Largura da linha */
+    background-color: black;
+    margin: 0 10px; /* Margem entre o hr e os cards */
+  }
+  
