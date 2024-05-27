@@ -3,16 +3,8 @@
     "bcrypt": "^5.1.1",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
+    "mogodb": "^0.0.1-security",
     "mongodb": "^6.6.2",
     "mongoose": "^8.4.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "dev": "npm run start",
-    "vercel-build": "npm install && npm run build",
-    "build": "echo 'Building the project...'"
   }
 }
