@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Online Task</title>
+    <link rel="stylesheet" href="css/sing-in-up.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Join us! &#128075;</h1>
+            <p>Create your account!</p>
+        </header>
+
+        <section>
+            <button class="l-apple" type="button">
+                <img class="icon-apple" src="images/login/apple.svg" alt="Apple Icon">Continue with Apple
+            </button>
+            <button class="l-gmail" type="button">
+                <img class="icon-gmail" src="images/login/google.svg" alt="Google Icon">Continue with Google
+            </button>
+        </section>
+
+        <div class="divider">
+            <div class="divider-line"></div> or <div class="divider-line"></div>
+        </div>
+
+        <form class="formulario" action="/cadastro" method="POST">
+            <label for="nome">Name
+                <input type="text" name="nome" id="nome" required>
+            </label>
+
+            <label for="email">Email
+                <input type="email" name="email" id="email" required>
+            </label>
+
+            <label for="senha">Password
+                <input type="password" name="senha" id="senha" required>
+            </label>
+
+            <label for="confirmar_senha">Confirm Password
+                <input type="password" name="confirmar_senha" id="confirmar_senha" required>
+            </label>
+
+            <input class="sign-up" type="submit" value="Sign Up">
+        </form>
+
+        <footer>
+            <p>Already have an account? <a href="index.html">Log in now</a></p>
+        </footer>
+    </main>
+</body>
+</html>

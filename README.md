@@ -5,6 +5,11 @@ Bem-vindo à aplicação de gerenciamento de tarefas! Este projeto oferece uma i
 ## 🌟 Demonstração
 
 Você pode ver uma demonstração ao vivo da aplicação [aqui](https://task-online.vercel.app/).
+- 📝 **Email teste:** teste@gmail.com
+- 📝 **Senha teste:** 123456
+
+
+
 
 ## ✨ Recursos
 
